@@ -37,9 +37,7 @@ We use **[Conventional Commits](https://www.conventionalcommits.org/)** to keep 
 
 ## i18n
 
-### Adding a New Language
-
-To contribute to the translation of the app, you can add a new language file in the [`packages/app-client/src/locales`](./packages/app-client/src/locales) directory. The file should be named according to the language code (e.g., `fr.json` for French). You can then add the new language to the `locales` array in the [`packages/app-client/src/modules/i18n/i18n.provider.tsx`](./packages/app-client/src/modules/i18n/i18n.provider.tsx) file.
+Information about the translation process can be found in the [locales README](./packages/app-client/src/locales/README.md).
 
 ### Updating an Existing Language
 

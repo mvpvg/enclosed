@@ -1,8 +1,8 @@
 {
   "name": "@enclosed/app-client",
   "type": "module",
-  "version": "1.6.1",
-  "packageManager": "pnpm@9.10.0",
+  "version": "1.14.0",
+  "packageManager": "pnpm@9.15.0",
   "description": "Enclosed frontend client",
   "author": "Corentin Thomasset <corentinth@proton.me> (https://corentin.tech)",
   "license": "Apache-2.0",
@@ -23,7 +23,9 @@
     "test": "pnpm run test:unit",
     "test:unit": "vitest run",
     "test:unit:watch": "vitest watch",
-    "typecheck": "tsc --noEmit"
+    "test:e2e": "playwright test",
+    "typecheck": "tsc --noEmit",
+    "script:get-missing-i18n-keys": "tsx src/scripts/get-missing-i18n-keys.script.ts"
   },
   "dependencies": {
     "@corentinth/chisels": "^1.0.2",
@@ -32,25 +34,30 @@
     "@solid-primitives/i18n": "^2.1.1",
     "@solid-primitives/storage": "^4.2.1",
     "@solidjs/router": "^0.14.3",
-    "@unocss/reset": "^0.62.2",
+    "@unocss/reset": "^0.64.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "jszip": "^3.10.1",
     "lodash-es": "^4.17.21",
     "solid-js": "^1.8.11",
+    "solid-sonner": "^0.2.8",
     "tailwind-merge": "^2.5.2",
-    "unocss-preset-animations": "^1.1.0"
+    "unocss-preset-animations": "^1.1.0",
+    "uqr": "^0.1.2"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^3.0.0",
+    "@antfu/eslint-config": "catalog:",
     "@iconify-json/tabler": "^1.1.120",
+    "@playwright/test": "^1.46.1",
     "@types/lodash-es": "^4.17.12",
-    "eslint": "^9.10.0",
+    "@types/node": "catalog:",
+    "eslint": "catalog:",
     "jsdom": "^25.0.0",
-    "typescript": "^5.3.3",
-    "unocss": "^0.62.2",
+    "tsx": "^4.19.1",
+    "typescript": "catalog:",
+    "unocss": "^0.64.0",
     "vite": "^5.0.11",
     "vite-plugin-solid": "^2.8.2",
-    "vitest": "^2.0.5"
+    "vitest": "catalog:"
   }
 }

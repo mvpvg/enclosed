@@ -9,7 +9,15 @@
   },
   "navbar": {
     "new-note": "New note",
+    "github": "GitHub",
+    "language": "Language",
+    "github-repository": "GitHub repository",
+    "documentation": "Documentation",
+    "change-theme": "Change theme",
+    "menu-icon": "Menu icon",
+    "change-language": "Change language",
     "theme": {
+      "theme": "Theme",
       "light-mode": "Light mode",
       "dark-mode": "Dark mode",
       "system-mode": "System"
@@ -50,6 +58,7 @@
       "rate-limit": "You have exceeded the rate limit for creating notes. Please try again later.",
       "too-large": "The note content and attachments are too large. Please reduce the size and try again.",
       "unauthorized": "You are not authorized to create notes. Please login and try again.",
+      "api-not-found": "The API endpoint is not found. The server may not be configured correctly.",
       "unknown": "An error occurred while creating the note, please try again."
     },
     "share": {
@@ -61,9 +70,13 @@
       "placeholder": "Type your note here...",
       "password": {
         "label": "Note password",
-        "placeholder": "Password..."
+        "placeholder": "Password...",
+        "hide-password": "Hide password",
+        "show-password": "Show password",
+        "generate-random-password": "Generate random password"
       },
       "expiration": "Expiration delay",
+      "no-expiration": "The note never expires",
       "delays": {
         "1h": "1 hour",
         "1d": "1 day",
@@ -88,12 +101,27 @@
       "with-deletion": "The note will be deleted after reading.",
       "copy-link": "Copy link",
       "copy-success": "Link copied"
+    },
+    "qr-code": {
+      "title": "Share this note on mobile",
+      "description": "You can scan this QR code to view the note on your mobile device. You can also export the QR code image to share it with others.",
+      "export": "Export QR code",
+      "download-svg": "Download as SVG",
+      "download-png": "Download as PNG",
+      "download-success": "QR code downloaded",
+      "copy-svg": "Copy SVG code",
+      "copy-success": "SVG copied to clipboard"
     }
   },
   "view": {
+    "loading": "Loading note...",
     "note-content": "Note content",
-    "download": "Download",
-    "download-all": "Download all files",
+    "assets": {
+      "download": "Download",
+      "download-all": "Download all files",
+      "heading-multiple": "{{ count }} files attached to this note",
+      "heading-single": "1 file attached to this note"
+    },
     "request-password": {
       "description": "This note is password protected. Please enter the password to unlock it.",
       "form": {
@@ -102,6 +130,11 @@
         "unlock-button": "Unlock note",
         "invalid": "The password you entered is invalid or the note URL is incorrect."
       }
+    },
+    "warn-for-note-deletion": {
+      "title": "This note will be deleted",
+      "description": "This note has been configured to be deleted after reading. After displaying the note, it will be permanently deleted and cannot be recovered.",
+      "confirm": "I understand, show me the note"
     },
     "error": {
       "invalid-url": {

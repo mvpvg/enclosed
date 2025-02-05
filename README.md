@@ -47,6 +47,7 @@ A live instance is available at [enclosed.cc](https://enclosed.cc).
 - **Open Source**: The source code is available under the Apache 2.0 License.
 - **Self-Hostable**: Run your instance of Enclosed for private note sharing.
 - **CLI**: A command-line interface for creating notes from the terminal.
+- **Very low environmental impact**: the app and the docs is rated A+ on websitecarbon.com (see [here](https://www.websitecarbon.com/website/enclosed-cc/) and [here](https://www.websitecarbon.com/website/docs-enclosed-cc/)).
 
 ## Self host
 
@@ -159,6 +160,10 @@ This project is licensed under the Apache 2.0 License. See the [LICENSE](./LICEN
 
 This project is crafted with ❤️ by [Corentin Thomasset](https://corentin.tech).
 If you find this project helpful, please consider [supporting my work](https://buymeacoffee.com/cthmsst).
+
+Thank you to all the contributors who have helped make Enclosed better!
+
+[![Contributors](https://contrib.rocks/image?repo=CorentinTh/enclosed)](https://github.com/CorentinTh/enclosed/graphs/contributors)
 
 ### Stack
 

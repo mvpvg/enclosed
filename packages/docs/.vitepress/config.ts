@@ -81,6 +81,7 @@ export default defineConfig({
         items: [
           { text: 'Using Docker', link: '/self-hosting/docker' },
           { text: 'Using Docker Compose', link: '/self-hosting/docker-compose' },
+          { text: 'Deploy on other platforms', link: '/self-hosting/other-platforms' },
           { text: 'Configuration', link: '/self-hosting/configuration' },
           { text: 'Troubleshooting', link: '/self-hosting/troubleshooting' },
         ],
@@ -91,6 +92,13 @@ export default defineConfig({
           { text: 'CLI', link: '/integrations/cli' },
           { text: 'NPM package', link: '/integrations/npm-package' },
           { text: 'Versioning', link: '/integrations/versioning' },
+        ],
+      },
+      {
+        text: 'Resources',
+        items: [
+          { text: 'Languages and i18n', link: '/resources/i18n' },
+          { text: 'Brand kit', link: '/resources/brand-kit' },
         ],
       },
     ],

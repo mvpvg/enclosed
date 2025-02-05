@@ -1,11 +1,10 @@
-export type RuntimeConfig = {
-  isAuthenticationRequired: boolean;
-};
-
-export type BuildTimeConfig = {
+export type Config = {
   baseApiUrl: string;
   documentationBaseUrl: string;
+  isAuthenticationRequired: boolean;
   enclosedVersion: string;
+  defaultDeleteNoteAfterReading: boolean;
+  defaultNoteTtlSeconds: number;
+  isSettingNoExpirationAllowed: boolean;
+  defaultNoteNoExpiration: boolean;
 };
-
-export type Config = RuntimeConfig & BuildTimeConfig;

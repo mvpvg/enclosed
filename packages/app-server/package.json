@@ -1,8 +1,8 @@
 {
   "name": "@enclosed/app-server",
   "type": "module",
-  "version": "1.6.1",
-  "packageManager": "pnpm@9.10.0",
+  "version": "1.14.0",
+  "packageManager": "pnpm@9.15.0",
   "description": "Enclosed backend server",
   "author": "Corentin Thomasset <corentinth@proton.me> (https://corentin.tech)",
   "license": "Apache-2.0",
@@ -43,7 +43,7 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^3.0.0",
+    "@antfu/eslint-config": "catalog:",
     "@cloudflare/workers-types": "^4.20240821.1",
     "@total-typescript/ts-reset": "^0.6.0",
     "@types/bcryptjs": "^2.4.6",
@@ -51,12 +51,12 @@
     "@types/node-cron": "^3.0.11",
     "@vitest/coverage-v8": "^2.0.5",
     "dotenv": "^16.4.5",
-    "esbuild": "^0.23.1",
-    "eslint": "^9.10.0",
+    "esbuild": "^0.24.0",
+    "eslint": "catalog:",
     "pino-pretty": "^11.2.2",
-    "tsx": "^4.17.0",
-    "typescript": "^5.5.4",
-    "vitest": "^2.0.5",
+    "tsx": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:",
     "wrangler": "^3.72.1",
     "zx": "^8.1.4"
   }

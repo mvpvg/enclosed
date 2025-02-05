@@ -9,7 +9,15 @@
   },
   "navbar": {
     "new-note": "Nouvelle note",
+    "github": "GitHub",
+    "language": "Langue",
+    "github-repository": "Dépôt GitHub",
+    "documentation": "Documentation",
+    "change-theme": "Changer de thème",
+    "menu-icon": "Icône du menu",
+    "change-language": "Changer de langue",
     "theme": {
+      "theme": "Thème",
       "light-mode": "Mode clair",
       "dark-mode": "Mode sombre",
       "system-mode": "Mode système"
@@ -50,6 +58,7 @@
       "rate-limit": "Vous avez dépassé la limite de création de notes. Veuillez réessayer plus tard.",
       "too-large": "Le contenu de la note et les pièces jointes sont trop volumineux. Veuillez réduire la taille et réessayer.",
       "unauthorized": "Vous n'êtes pas autorisé à créer des notes. Veuillez vous connecter et réessayer.",
+      "api-not-found": "L'endpoint API n'a pas été trouvé. Le serveur peut ne pas être correctement configuré.",
       "unknown": "Une erreur est survenue lors de la création de la note, veuillez réessayer."
     },
     "share": {
@@ -61,9 +70,13 @@
       "placeholder": "Saisissez votre note ici...",
       "password": {
         "label": "Mot de passe de la note",
-        "placeholder": "Mot de passe..."
+        "placeholder": "Mot de passe...",
+        "hide-password": "Masquer le mot de passe",
+        "show-password": "Afficher le mot de passe",
+        "generate-random-password": "Générer un mot de passe aléatoire"
       },
       "expiration": "Délai d'expiration",
+      "no-expiration": "La note n'expirera jamais",
       "delays": {
         "1h": "1 heure",
         "1d": "1 jour",
@@ -88,12 +101,27 @@
       "with-deletion": "La note sera supprimée après lecture.",
       "copy-link": "Copier le lien",
       "copy-success": "Lien copié"
+    },
+    "qr-code": {
+      "title": "Partager cette note sur mobile",
+      "description": "Scannez ce QR code pour ouvrir la note sur votre appareil mobile. Vous pouvez également exporter le QR code pour le partager.",
+      "export": "Exporter le QR code",
+      "download-svg": "Télécharger au format SVG",
+      "download-png": "Télécharger au format PNG",
+      "download-success": "Téléchargement réussi",
+      "copy-svg": "Copier le code du SVG",
+      "copy-success": "SVG copié dans le presse-papiers"
     }
   },
   "view": {
+    "loading": "Chargement de la note...",
     "note-content": "Contenu de la note",
-    "download": "Télécharger",
-    "download-all": "Télécharger tous les fichiers",
+    "assets": {
+      "download": "Télécharger",
+      "download-all": "Tout télécharger",
+      "heading-multiple": "{{ count }} fichiers joints à cette note",
+      "heading-single": "1 fichier joint à cette note"
+    },
     "request-password": {
       "description": "Cette note est protégée par un mot de passe. Veuillez entrer le mot de passe pour la déverrouiller.",
       "form": {
@@ -103,8 +131,13 @@
         "invalid": "Le mot de passe que vous avez entré est incorrect ou l'URL de la note est incorrecte."
       }
     },
-    "error": {
+    "warn-for-note-deletion": {
+      "title": "Cette note sera supprimée après lecture",
+      "description": "Cette note sera supprimée après lecture. Une fois affichée, elle sera définitivement supprimée et ne pourra pas être récupérée.",
+      "confirm": "Je comprends, montrer la note"
+    },
 
+    "error": {
       "invalid-url": {
         "title": "URL de note invalide",
         "description": "Cette URL de note est invalide. Veuillez vous assurer d'utiliser la bonne URL."

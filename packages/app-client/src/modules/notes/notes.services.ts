@@ -1,6 +1,6 @@
 import { apiClient } from '../shared/http/http-client';
 
-export { fetchNoteById, storeNote };
+export { fetchNoteById, fetchNoteExists, storeNote };
 
 async function storeNote({
   payload,
@@ -11,7 +11,7 @@ async function storeNote({
   isPublic,
 }: {
   payload: string;
-  ttlInSeconds: number;
+  ttlInSeconds?: number;
   deleteAfterReading: boolean;
   encryptionAlgorithm: string;
   serializationFormat: string;
@@ -46,4 +46,13 @@ async function fetchNoteById({ noteId }: { noteId: string }) {
   });
 
   return { note };
+}
+
+async function fetchNoteExists({ noteId }: { noteId: string }) {
+  const { noteExists } = await apiClient<{ noteExists: boolean }>({
+    method: 'GET',
+    path: `/api/notes/${noteId}/exists`,
+  });
+
+  return { noteExists };
 }
